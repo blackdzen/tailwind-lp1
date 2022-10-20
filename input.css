@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Red Hat Display', sans-serif;;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1080px]
+  }
+  .btn {
+    @apply max-w-fit tracking-tight hover:shadow-custom-shadow inline-block mt-[34px] py-[10px] px-8 text-xl text-button-bg-color hover:text-white hover:bg-button-bg-color transition-colors border-2 border-b-button-bg-color rounded-2xl text-center sm:text-base sm:w-full sm:mx-auto focus:outline-none
+  }
+}
+
+.burger {
+  height: 20px;
+  position: relative;
+  width: 30px;
+}
+
+.burger-line {
+  display: flex;
+  width: 30px;
+  height: 2px;
+  background: #D70026;
+  transition: .3s all ease;
+}
+
+.top-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.mid-line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.bottom-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.burger.active > .top-line {
+  transform: translateY(8px) rotate(45deg);
+  transition: .3s all ease;
+}
+
+.burger.active > .mid-line {
+  opacity: 0;
+  transition: .3s all ease;
+}
+
+.burger.active > .bottom-line {
+  transform: translateY(-10px) rotate(-45deg);
+  transition: .3s all ease;
+}
+
+
+
+
+
+

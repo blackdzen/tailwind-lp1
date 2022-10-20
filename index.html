@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tailwind Landing Page</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+ 		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+    <header class="relative">
+      <div class="container">
+        <nav class="flex justify-between items-center pt-[26px]">
+          <a href="#"><img src="./img/Logo.svg" alt="logo"></a>
+          <ul class="flex gap-12 md:hidden">
+            <li><a href="#" class="font-medium text-xl text-nav-font-color hover:text-button-bg-color transition-colors lg:text-base">About</a></li>
+            <li><a href="#" class="font-medium text-xl text-nav-font-color hover:text-button-bg-color transition-colors lg:text-base">Services</a></li>
+            <li><a href="#" class="font-medium text-xl text-nav-font-color hover:text-button-bg-color transition-colors lg:text-base">Case Studies</a></li>
+            <li><a href="#" class="font-medium text-xl text-nav-font-color hover:text-button-bg-color transition-colors lg:text-base">Careers</a></li>
+            <li><a href="#" class="font-medium text-xl text-nav-font-color hover:text-button-bg-color transition-colors lg:text-base">Blog</a></li>
+          </ul>
+
+          <ul id="menu" class="hidden absolute left-6 right-6 top-24 bg-attention-font-color  flex-col items-center">
+            <li><a href="#" class="block py-4 text-white">About</a></li>
+            <li><a href="#" class="block py-4 text-white">Services</a></li>
+            <li><a href="#" class="block py-4 text-white">Case Studies</a></li>
+            <li><a href="#" class="block py-4 text-white">Careers</a></li>
+            <li><a href="#" class="block py-4 text-white">Blog</a></li>
+          </ul>
+
+          <button class="burger hidden md:block">
+            <span class="burger-line top-line"></span>
+            <span class="burger-line mid-line"></span>
+            <span class="burger-line bottom-line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h1 class="text-black text-5xl font-black pt-28 max-w-2xl leading-snug text-center mx-auto lg:text-4xl lg:pt-16 lg:max-w-lg md:text-3xl md:pt-12 md:max-w-md sm:text-2xl sm:pt-10 sm:max-w-xs">Grow your business online. Get. More. Leads.</h1>
+          <p class="text-xl text-center max-w-xl mx-auto mt-[18px] tracking-tight md:text-lg md:max-w-lg md:mt-4 sm:text-sm sm:mt-2">Wanna get serious into digital marketing? Then you need leads and this is where we can help you.</p>
+          <div class="flex justify-center gap-7 sm:flex-col sm:max-w-xs sm:mx-auto sm:gap-1">
+            <a href="#" class="btn">Start here.</a>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="flex justify-between mt-[164px] pb-[124px] lg:flex-col lg:mt-20 lg:pb-24">
+            <div class="flex flex-col w-1/2 lg:w-full">
+              <div class="text-attention-font-color font-bold text-xl tracking-tight">about us</div>
+              <h2 class="font-black text-4xl mt-[2px] tracking-tight lg:text-3xl sm:text-2xl">The team behind the brand.</h2>
+              <p class="text-lg mt-[10px] max-w-sm lg:max-w-full sm:text-base">Proin elementum fermentum auctor. Nulla semper, est eget congue pellentesque, erat nulla molestie mi, in finibus leo nisl ac lectus. Praesent non urna. Nulla congue porta lectus in laoreet. Aenean pellentesque vitae metus id porttitor.t</p>
+              <a href="#" class="btn lg:mx-auto">Learn More</a>
+            </div>  
+            <div class="flex flex-col w-[445px] lg:w-full lg:mt-6">
+              <img src="img/about.jpg" alt="about">
+            </div>  
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-footer-bg-color">
+      <div class="container">
+        <div class="flex pt-20 pb-24 gap-40">
+          <div class="flex flex-col">
+            <a href="#"><img src="./img/footer-logo.svg" alt="logo"></a>
+            <p class="text-sm tracking-tight text-white max-w-[250px] mt-5">Sign up for our newsletter to get latest news from us</p>
+            <input type="text" placeholder="Enter your email" class="focus:border-button-bg-color transition-colors focus:outline-none bg-email-bg-color border rounded-xl max-w-[225px] text-sm tracking-tight pt-[13px] pb-[12px] pl-[18px] mt-[13px]">
+            <a href="#" class="btn mt-5 sm:mx-0">Submit</a>
+          </div>
+          <div class="flex flex-col gap-[22px]">
+            <div class="text-button-bg-color text-sm font-medium tracking-tight">Jump to</div>
+            <ul class="text-white font-medium text-sm tracking-tight flex flex-col gap-3">
+              <li><a class="hover:text-attention-font-color transition-colors" href="#">About</a></li>
+              <li><a class="hover:text-attention-font-color transition-colors" href="#">Contact</a></li>
+              <li><a class="hover:text-attention-font-color transition-colors" href="#">Services</a></li>
+              <li><a class="hover:text-attention-font-color transition-colors" href="#">Case Studies</a></li>
+              <li><a class="hover:text-attention-font-color transition-colors" href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+	</body>
+</html>
